@@ -1,4 +1,4 @@
-name: Test Bash Script
+name: Test The Bootstrap Script
 
 on:
   push:
