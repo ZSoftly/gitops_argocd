@@ -48,6 +48,8 @@ echo -e "\nTo delete the cluster when done, run:"
 echo -e "\nminikube delete -p ${CLUSTER_NAME}"
 sleep 2
 
+# The kubectl wait command is used to block until a specified condition is met on one or more Kubernetes resources. 
+# In this case, the command is waiting for the Argo CD server service to become available.
 echo -e "\n\nARGO CD Installed and Waiting for service to become available\n\n"
 kubectl wait --namespace ${ARGOCD_NS} --for=condition=Available ${ARGO_SER} --timeout=60s
 
