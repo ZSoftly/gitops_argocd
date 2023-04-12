@@ -32,5 +32,4 @@ jobs:
 
     - name: Test script
       run: |
-        export CLUSTER_NAME="test-cluster"
-        ./minikube.sh
+        eCLUSTER_NAME="test-cluster" ./your_script_name.sh
