@@ -53,5 +53,5 @@ sleep 2
 echo -e "\n\nARGO CD Installed and Waiting for service to become available\n\n"
 kubectl wait --namespace ${ARGOCD_NS} --for=condition=Available ${ARGO_SER} --timeout=60s
 
-echo -e "\nStarting port forwarding"
-kubectl port-forward ${ARGO_SER} -n ${ARGOCD_NS} 8080:443
+echo -e "\n To Start port forwarding, run the following command"
+echo -e "\n kubectl port-forward ${ARGO_SER} -n ${ARGOCD_NS} 8080:443"
