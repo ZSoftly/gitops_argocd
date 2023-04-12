@@ -3,7 +3,7 @@
 # This is a bootstrap script to automate the creation of a k8s cluster on Minikube using the Docker driver
 
 # Setting variables
-export CLUSTER_NAME=""
+export CLUSTER_NAME="$1"
 export NAMESPACE=""
 export ARGOCD_NS='argocd'
 export DRIVER='docker'

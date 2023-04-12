@@ -32,4 +32,4 @@ jobs:
 
     - name: Test script
       run: |
-        eCLUSTER_NAME="test-cluster" ./minikube.sh
+        ./minikube.sh test-cluster
